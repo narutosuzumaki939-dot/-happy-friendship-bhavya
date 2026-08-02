@@ -37,3 +37,163 @@ align-items:center;
 background:linear-gradient(135deg,#FFD6E7,#FFF3B0,#D9F7FF);
 
 overflow:hidden;
+}
+
+.card{
+
+width:90%;
+
+max-width:420px;
+
+background:rgba(255,255,255,.25);
+
+backdrop-filter:blur(18px);
+
+padding:35px;
+
+border-radius:25px;
+
+text-align:center;
+
+box-shadow:0 15px 40px rgba(0,0,0,.2);
+
+animation:pop .8s ease;
+
+}
+
+@keyframes pop{
+
+from{
+
+transform:scale(.7);
+
+opacity:0;
+
+}
+
+to{
+
+transform:scale(1);
+
+opacity:1;
+
+}
+
+}
+
+h1{
+
+font-size:34px;
+
+margin-bottom:15px;
+
+color:#ff4d88;
+
+}
+
+h2{
+
+color:#444;
+
+margin-bottom:15px;
+
+}
+
+p{
+
+font-size:18px;
+
+line-height:1.6;
+
+color:#444;
+
+margin-bottom:22px;
+
+}
+
+button{
+
+padding:14px 25px;
+
+border:none;
+
+border-radius:50px;
+
+font-size:18px;
+
+background:#ff4d88;
+
+color:white;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+button:hover{
+
+transform:scale(1.08);
+
+}
+
+#msg{
+
+margin-top:25px;
+
+font-size:20px;
+
+font-weight:bold;
+
+color:#ff4d88;
+
+display:none;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>💛 Happy Friendship Day 💛</h1>
+
+<h2>Battery Bhu 🤭</h2>
+
+<p>
+
+Dear Bhondu,<br><br>
+
+Thank you for being my HG,
+
+for tolerating this Owl 🦉 &
+
+Sticker Chor 😂.
+
+</p>
+
+<button onclick="showMsg()">
+
+Open Surprise 🎁
+
+</button>
+
+<div id="msg"></div>
+
+</div>
+
+<script>
+
+function showMsg(){
+
+document.getElementById("msg").style.display="block";
+
+document.getElementById("msg").innerHTML=
+
+"✨ Happy Friendship Day Bhavya 💛<br><br>From your HB 🦉❤️";
+
+}
+
